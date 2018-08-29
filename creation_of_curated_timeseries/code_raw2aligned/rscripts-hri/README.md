@@ -9,18 +9,36 @@ which creates this output path:
 `/home/map479/tmp/phdtmpdata/time_aligned_different_length_data_for_separate_activities_p01_to_p22_octave_linux`
 
 ```
-$ tree -d
+
+~/tmp/phdtmpdata/time_aligned_different_length_data_for_separate_activities_p01_to_p22_octave_linux$ tree -d
 .
-├── p01
-│   └── p01-HRI
-├── p02
-│   └── p02-HRI
+├── p01-HRI
+├── p02-HRI
+├── p03-HRI
+├── p04-HRI
+├── p05-HRI
+├── p06-HRI
+├── p07-HRI
+├── p08-HRI
+├── p09-HRI
+├── p10-HRI
+├── p11-HRI
+├── p12-HRI
+├── p13-HRI
+├── p14-HRI
+├── p15-HRI
+├── p16-HRI
+├── p17-HRI
+├── p18-HRI
+├── p19-HRI
+├── p20-HRI
+├── p21-HRI
+└── p22-HRI
+
+22 directories
 
 
-├── p21
-│   └── p21-HRI
-└── p22
-    └── p22-HRI
+
 ```
 
 
@@ -36,8 +54,11 @@ R
 `source(paste(getwd(),"/BA_creating_TidiedInterpolatedDATA_p01p22.R", sep=""), echo=TRUE)`
 
 ```
-/home/map479/tmp/phdtmpdata/outcomes/preProcessedDataTable_p01_to_p22 
+/home/map479/
+
+tmp/phdtmpdata/outcomes/preProcessedDataTable_p01_to_p22 
 158M Jul 27 11:01 TidiedInterpolatedData.datatable
+158M Aug 29 14:47 TidiedInterpolatedData.datatable
 ```
 
 
@@ -66,14 +87,15 @@ R
 4: -0.7921632 3.185006 1.562309
 5: -0.6829491 3.540080 1.505756
 6: -0.6333563 3.374851 1.436897
+
 ```
 
 
 
-`/home/map479/mxochicale/github/phd-thesis-code-data/timeseries/hri`
+`/home/ai/github/phd-thesis-code-data/data/timeseries/hri`
 ```
-$ls -l	
-	-rw-rw-r-- 1 map479 map479 39876955 Jul 27 12:02 TidiedInterpolatedRawData-v06.dt
+39876955 Jul 27 12:02 TidiedInterpolatedRawData-v06.dt
+39M Aug 29 14:20 TidiedInterpolatedRawData-v06.dt
 ```
 
 

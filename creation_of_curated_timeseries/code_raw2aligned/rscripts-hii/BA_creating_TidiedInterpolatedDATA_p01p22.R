@@ -27,7 +27,8 @@ start.time <- Sys.time()
 
 participantname <- c("p01","p02", "p06", "p07", "p08", "p09", "p10", "p11", "p13","p14","p15","p16","p17","p18","p19", "p21","p22")
 participant_number <- c("p01_","p02_", "p06_", "p07_", "p08_", "p09_", "p10_", "p11_", "p13_","p14_","p15_","p16_","p17_","p18_","p19_", "p21_","p22_")
-participant_index <-  c( 3,     5,      7,      9,      11,     13,     15,     17,     19,    21,    23,    25,    27,    29,    31,     33,    35   )
+#participant_index <-  c( 3,     5,      7,      9,      11,     13,     15,     17,     19,    21,    23,    25,    27,    29,    31,     33,    35   )
+participant_index <-  c( 2,     3,      4,      5,      6,     7,     8,     9,     10,    11,    12,    13,    14,    15,    16,     17,    18   )
 
 activityname <- c("a01","a02","a03","a04", "a05","a06","a07","a08")
 activity_number <- c("a01_","a02_","a03_","a04_", "a05_","a06_","a07_","a08_")
@@ -52,8 +53,13 @@ options(digits=15)
 
 r_scripts_path <- getwd()
 
-home_path <- '/home/map479'
+
+setwd("../../../../../")
+home_path <- getwd()
 setwd(home_path)
+
+#home_path <- '/home/map479'
+#setwd(home_path)
 
 main_data_path=	'/tmp/phdtmpdata/hii_time_aligned_timeseries'
 data_path <-  paste(home_path,main_data_path,sep="")

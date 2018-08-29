@@ -18,7 +18,7 @@
 #+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # Defining participants, activities and sensors to read
 participantsNN <- c(1:22)
-# participantsNN <- c(1:12,14:15,17:22) # Discarding p13 and p16
+#participantsNN <- c(1:12,14:15,17:22) # Discarding p13 and p16
 
 
 aNN <- c(1,2,3,4) # available activities 1,2,3,4
@@ -26,7 +26,12 @@ sNN <- c(1,2,3,4)# available sensors 1,2,3,4
 
 participant_number <- c("p01_","p02_", "p03_", "p04_", "p05_","p06_","p07_","p08_","p09_","p10_","p11_","p12_","p13_","p14_","p15_","p16_","p17_","p18_","p19_","p20_","p21_","p22_")
 #participant_index <-  c(4,      6,      8,      10,     12,     14,   16,     18,   20,    22,    24,    26,    28,    30,    32,    34,    36,    38,    40,    42,    44,    46)
-participant_index <-  c(3,      5,      7,      9,     11,     13,   15,     17,   19,    21,    23,    25,    27,    29,    31,    33,    35,    37,    39,    41,    43,    45)
+#participant_index <-  c(3,      5,      7,      9,     11,     13,   15,     17,   19,    21,    23,    25,    27,    29,    31,    33,    35,    37,    39,    41,    43,    45)
+
+participant_index <-  c(2,      3,      4,      5,     6,     7,    8,     9,   10,    11,    12,    13,    14,    15,    16,    17,    18,    19,    20,    21,    22,    23)
+
+
+
 
 activity_number <- c("a01_","a02_","a03_","a04_")
 sensor_number <- c("s01_","s02_","s03_","s04_")
@@ -50,7 +55,8 @@ options(digits=15)
 
 r_scripts_path <- getwd()
 
-home_path <- '/home/map479'
+setwd("../../../../../")
+home_path <- getwd()
 setwd(home_path)
 
 main_data_path = '/tmp/phdtmpdata/time_aligned_different_length_data_for_separate_activities_p01_to_p22_octave_linux'

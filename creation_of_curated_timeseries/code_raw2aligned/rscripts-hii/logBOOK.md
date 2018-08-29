@@ -11,4 +11,28 @@ logBOOK
 # sorted
 
 
+BA
+```
+setwd("../../../../../")
+home_path <- getwd()
+setwd(home_path)
+
+#home_path <- '/home/map479'
+#setwd(home_path)
+```
+
+
+BB
+
+```
+setwd("../../")
+home_path <- getwd()
+setwd(home_path)
+feature_path <- '/data/timeseries/hii'
+```
+
+
+sorted: Wed 29 Aug 14:41:10 BST 2018
+
+
 

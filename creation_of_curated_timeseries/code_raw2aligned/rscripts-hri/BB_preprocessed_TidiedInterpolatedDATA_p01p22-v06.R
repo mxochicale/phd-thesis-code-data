@@ -38,11 +38,14 @@ r_scripts_path <- getwd()
 setwd("../../../")
 github_repository_path <- getwd()
 
-home_path <- '/home/map479'
+setwd("../../")
+home_path <- getwd()
 setwd(home_path)
 
 
-feature_path <- '/timeseries/hri'
+
+
+feature_path <- '/data/timeseries/hri'
 outcomes_data_path <- paste(github_repository_path, feature_path, sep="")
 
 tidinterdata <- '/tmp/phdtmpdata/outcomes/preProcessedDataTable_p01_to_p22'

@@ -25,7 +25,6 @@ main_path = pwd;
 cd ..;
 cd ..;
 cd ..;
-cd ..;
 user_path = pwd;
 
 

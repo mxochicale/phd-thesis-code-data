@@ -6,47 +6,31 @@ r-scripts for Human-Image Imitation (hii)
 
 ## 1. Generate aligned data
 `/mscripts/hii_rawData_TO_TimeAlignedDataForSeparateActivities_p01_to_p22_octave_linux.m`
-which creates this output path: `/home/map479/tmp/phdtmpdata/hii_time_aligned_timeseries`
+which creates this output path: `/home/USERNAME/tmp/phdtmpdata/hii_time_aligned_timeseries`
 
 ```
-$ tree -d
+~/tmp/phdtmpdata/hii_time_aligned_timeseries$ tree -d
 .
-├── p01
-│   └── p01-HII
-├── p02
-│   └── p02-HII
-├── p06
-│   └── p06-HII
-├── p07
-│   └── p07-HII
-├── p08
-│   └── p08-HII
-├── p09
-│   └── p09-HII
-├── p10
-│   └── p10-HII
-├── p11
-│   └── p11-HII
-├── p13
-│   └── p13-HII
-├── p14
-│   └── p14-HII
-├── p15
-│   └── p15-HII
-├── p16
-│   └── p16-HII
-├── p17
-│   └── p17-HII
-├── p18
-│   └── p18-HII
-├── p19
-│   └── p19-HII
-├── p21
-│   └── p21-HII
-└── p22
-    └── p22-HII
+├── p01-HII
+├── p02-HII
+├── p06-HII
+├── p07-HII
+├── p08-HII
+├── p09-HII
+├── p10-HII
+├── p11-HII
+├── p13-HII
+├── p14-HII
+├── p15-HII
+├── p16-HII
+├── p17-HII
+├── p18-HII
+├── p19-HII
+├── p21-HII
+└── p22-HII
 
-34 directories
+17 directories
+
 
 ```
 
@@ -66,6 +50,7 @@ Run `source(paste(getwd(),"/BA_creating_TidiedInterpolatedDATA_p01p22.R", sep=""
 which creates
 ```
 246M Aug 28 19:07 hii-TidiedInterpolatedData.datatable
+246M Aug 29 14:34 hii-TidiedInterpolatedData.datatable
 ```
 at
 
@@ -93,7 +78,7 @@ at
 
 ```
 
-`/home/map479/mxochicale/github/phd-thesis-code-data/timeseries/hii`
+`/home/map479/mxochicale/github/phd-thesis-code-data/data/timeseries/hii`
 
 ```
 
