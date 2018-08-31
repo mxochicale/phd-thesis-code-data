@@ -7,8 +7,8 @@ Functions
 
 ```
 
-github_path <- getwd()
-source( paste(github_path,'/hwum-dataset/r-scripts/functions/ollin_cencah.R',sep='') )
+github_repo_path <- getwd()
+source( paste(github_repo_path,'/code/rfunctions/ollin_cencah.R',sep='') )
 
 ```
 

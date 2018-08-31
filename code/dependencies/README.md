@@ -4,12 +4,39 @@
 
 ## R version 3.4.4 (2018-03-15) -- "Someone to Lean On"
 
-## packages
-Run `install-basic-packages.R` for package dependecies
-
 ## installing R
 
 Follow [this instructions](https://github.com/mxochicale/R/blob/master/upgradeR/installation-ubuntu1604.md) to install R in Ubuntu 16.04 
+
+
+```
+packages-dependencies.sh
+```
+
+
+## packages
+Run `install-basic-packages.R` for package dependecies
+
+
+
+##  nonlinearTseries
+
+
+install `./install_nonlinearTseries.R`
+
+
+then clone this repo
+
+```
+cd
+cd github
+git clone https://github.com/mxochicale/nonlinearTseries
+```
+
+
+
+
+
 
 
 # GNU Octave

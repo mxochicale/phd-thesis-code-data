@@ -12,7 +12,8 @@
 #
 # source(paste(github_path,'/hwum-dataset/r-scripts/functions/embedding_parameters/withCao1997/cao97_functions.R', sep='') )
 # dyn.load('~/mxochicale/github/hwum-dataset/r-scripts/functions/embedding_parameters/withCao1997/cao97sub.so')
-#
+# dyn.load( '~/github/phd-thesis-code-data/code/rfunctions/embedding_parameters/withCao1997/cao97sub.so'  )
+
 #+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # Miguel P. Xochicale [http://mxochicale.github.io]
 # Doctoral Researcher in Human-Robot Interaction
@@ -24,7 +25,6 @@ library(ggplot2)
 library(RColorBrewer)
 
 
-
 #-----------------------------------------------------------------------------
 #--------------------  cao97 FORTRAN subrutine wraped in R  --------------------------
 #build dll to wrap f function in R
@@ -34,7 +34,7 @@ library(RColorBrewer)
 #to replace NaN values, use
 #X <- replace(X, is.nan(X), 0)
 cao97sub <- function(x,maxd,tau) {
-    dyn.load('~/mxochicale/github/hwum-dataset/r-scripts/functions/embedding_parameters/withCao1997/cao97sub.so')
+	dyn.load( '~/github/phd-thesis-code-data/code/rfunctions/embedding_parameters/withCao1997/cao97sub.so'  )
     lx = length(x)
     retdata <- .Fortran("cao97sub",
                         x = as.double(x),

@@ -20,23 +20,39 @@ install.packages("devtools", repos=mirror_repo, dependencies = TRUE)
 library(devtools)
 install_github("Rdatatable/data.table", build_vignettes=FALSE)
 
+
+# for timeseries
 #### Interpolation of Irregular and Regularly Spaced Data
 install.packages("akima", repos=mirror_repo, dependencies = TRUE)
 
+####  for savitzly-golay filter
+install.packages("signal", repos=mirror_repo, dependencies = TRUE)
+
+### ggplot2
+install.packages("ggplot2", repos=mirror_repo, dependencies = TRUE)
+
+### RColorBrewer) #for brewer.pal
+install.packages("RColorBrewer", repos=mirror_repo, dependencies = TRUE)
 
 
 
-#### ggplot2
-#install.packages("ggplot2", repos=mirror_repo, dependencies = TRUE)
-#
-#####  for savitzly-golay filter
-#install.packages("signal", repos=mirror_repo, dependencies = TRUE)
-#
-#####  for deSolve
-#install.packages("deSolve", repos=mirror_repo, dependencies = TRUE)
-#
-#### plot3D
-#.packages <- c('car', 'scatterplot3d', 'plot3D')
-#lapply(.packages, install.packages, dependencies = TRUE, repos=mirror_repo)
-#
+
+##for rfunctions
+### plot3D
+.packages <- c('car', 'scatterplot3d', 'plot3D')
+lapply(.packages, install.packages, dependencies = TRUE, repos=mirror_repo)
+
+
+####  for deSolve
+install.packages("deSolve", repos=mirror_repo, dependencies = TRUE)
+
+
+### tseriesChaos
+install.packages("tseriesChaos", repos=mirror_repo, dependencies = TRUE)
+
+
+
+
+
+
 

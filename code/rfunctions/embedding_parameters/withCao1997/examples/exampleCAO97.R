@@ -1,10 +1,6 @@
 r_scripts_path <- getwd()
-setwd("../")
-setwd("../")
-setwd("../")
-setwd("../")
-setwd("../")
-github_path <- getwd()
+setwd("../../../../../")
+github_repo_path <- getwd()
 
 
 library(data.table)
@@ -87,7 +83,8 @@ p <- ggplot(lts) +
 ################################################################################
 ## CAO's Algorithm
 ##
-source(paste(github_path,'/tavand/functions/embedding_parameters/withCao1997/cao97_functions.R', sep=''))
+source(paste(github_repo_path,'/code/rfunctions/embedding_parameters/withCao1997/cao97_functions.R', sep=''))
+
 
 maxdim <- 31
 maxtau <- 15

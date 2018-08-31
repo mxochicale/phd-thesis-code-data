@@ -44,7 +44,7 @@ setwd(home_path)
 
 
 
-feature_path <- '/data/timeseries/hii'
+feature_path <- '/data-outputs/raw-timeseries/hii'
 outcomes_data_path <- paste(github_repository_path, feature_path, sep="")
 
 tidinterdata <- '/tmp/phdtmpdata/outcomes/preProcessedDataTable_p01_to_p22'
