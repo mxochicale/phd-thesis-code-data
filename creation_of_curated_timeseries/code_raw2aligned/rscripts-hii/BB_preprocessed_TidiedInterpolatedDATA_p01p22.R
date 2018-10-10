@@ -68,10 +68,10 @@ data <- fread("hii-TidiedInterpolatedData.datatable", header=TRUE)
 xdata <- data
 
 ### Renaming Activity Variables
-xdata$Activity <- gsub('a01', 'HNnb', xdata$Activity) # 1 horizontal_arm_movement_at_normal_speed (without beat)
-xdata$Activity <- gsub('a02', 'VNnb', xdata$Activity) # 2 vertical_arm_movement_at_normal_speed   (without beat)
-xdata$Activity <- gsub('a03', 'HFnb', xdata$Activity) # 3 horizontal_arm_movement_at_faster_speed (without beat)
-xdata$Activity <- gsub('a04', 'VFnb', xdata$Activity) # 4 vertical_arm movement_at_faster_speed   (without beat)
+xdata$Activity <- gsub('a01', 'HNnb', xdata$Activity) # 1 horizontal_arm_movement_at_normal_speed (no beat)
+xdata$Activity <- gsub('a02', 'VNnb', xdata$Activity) # 2 vertical_arm_movement_at_normal_speed   (no beat)
+xdata$Activity <- gsub('a03', 'HFnb', xdata$Activity) # 3 horizontal_arm_movement_at_faster_speed (no beat)
+xdata$Activity <- gsub('a04', 'VFnb', xdata$Activity) # 4 vertical_arm movement_at_faster_speed   (no beat)
 xdata$Activity <- gsub('a05', 'HNwb', xdata$Activity) # 5 horizontal_arm_movement_at_normal_speed (with beat)
 xdata$Activity <- gsub('a06', 'VNwb', xdata$Activity) # 6 vertical_arm_movement_at_normal_speed   (with beat)
 xdata$Activity <- gsub('a07', 'HFwb', xdata$Activity) # 7 horizontal_arm_movement_at_faster_speed (with beat)
@@ -143,16 +143,6 @@ xdata[, Participant := as.character(Participant)][Participant == 'p22', Particip
 
 
 
-################################################################################
-### (3.5) Adding/Deleting postprocessing vectors
-
-###  Deleting some Magnetomer and quaternion data
-xdata <- xdata[, !c('Timestamp', 'MagnX', 'MagnY', 'MagnZ', 'qW', 'qX', 'qY', 'qZ') , with=FALSE]
-
-setkey(xdata, Sensor)
-xdata <- xdata[.(c('HS01','HS02'))]
-
-
 
 ################################################################################
 # (4) Creating and Changing to Preprosseced Data Path
@@ -164,9 +154,27 @@ if (file.exists(outcomes_data_path)){
 }
 
 
+
+###############################################################################
+## (3.5) Adding/Deleting postprocessing vectors
+
+###  Deleting some Magnetomer and quaternion data
+xdata <- xdata[, !c('Timestamp', 'MagnX', 'MagnY', 'MagnZ', 'qW', 'qX', 'qY', 'qZ') , with=FALSE]
+
+setkey(xdata, Sensor)
+
+#xdata <- xdata[.(c('HS01'))]
+#xdata <- xdata[.(c('HS02'))]
+#xdata <- xdata[.(c('HS03'))]
+xdata <- xdata[.(c('HS04'))]
+
+
 ################################################################################
 ####  (5)  Writing Data
-write.table(xdata, "hii-TidiedInterpolatedRawData.dt", row.name=FALSE)
+#write.table(xdata, "hii-HS01-TidiedInterpolatedRawData.dt", row.name=FALSE)
+#write.table(xdata, "hii-HS02-TidiedInterpolatedRawData.dt", row.name=FALSE)
+#write.table(xdata, "hii-HS03-TidiedInterpolatedRawData.dt", row.name=FALSE)
+write.table(xdata, "hii-HS04-TidiedInterpolatedRawData.dt", row.name=FALSE)
 
 
 

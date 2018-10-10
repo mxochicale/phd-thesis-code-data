@@ -31,7 +31,8 @@ data_path <- paste(main_path,'/data', sep='')
 ################################################################################
 # (1) Statistics for 20 participants 
 
-datafilename <- 'data_20p.csv'
+#datafilename <- 'data_20p.csv'
+datafilename <- 'data_06p.csv'
 
 full_anthropometric_path_and_datafilename <- paste( data_path, '/', datafilename, sep='')
 pNNanthropometric <- fread(full_anthropometric_path_and_datafilename)
