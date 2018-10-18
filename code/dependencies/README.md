@@ -68,7 +68,10 @@ sudo make uninstall
 ```
 
 
-## GNU Octave 4.2.2 Installation in Ubuntu 16.04
+
+## ISSUES
+
+### GNU Octave 4.2.2 Installation in Ubuntu 16.04
 *(this versions has an issue with undefined variables when calling functions )*
 
 ```

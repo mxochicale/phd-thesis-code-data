@@ -1,11 +1,10 @@
+logBOOK
+---
 
 
 
 
-
-
-
-# TODO
+## todo
 
 * [ ] incorporate help information to each piece of code:
 ```
@@ -35,7 +34,7 @@ added: Fri 27 Jul 12:25:39 BST 2018
 
 
 
-## DONE
+## done
 
 
 

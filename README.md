@@ -1,8 +1,14 @@
 # PhD thesis code and data
-
-This repository contains the scripts and data used to write 
+This repository contains code and data used to write 
 [my PhD thesis](http://).
+
 Descriptions and outline for the code are given at the top of the scripts.
+
+## Content of the repository
+
+
+
+
 
 
 ## Citation
@@ -13,13 +19,13 @@ use the following BibTeX to cite [my PhD thesis](http://).
 
 ```
 @phdthesis{XochicalePhDThesis2018,
-	author = {Xochicale, P., Miguel},
+	author = {Xochicale Miguel},
     	month = {10},
-    	school =       {University of Birmingham},
-  	address =      {Birmingham, United Kingdom},
-    	Title = {Nonlinear Time Series Analysis for Human-Robot Movement Variability},
-    	Year = {2018}
-  	type = {{PhD} dissertation},
+    	Year = {2018},
+    	school = {University of Birmingham},
+  	address = {Birmingham, United Kingdom},
+    	Title = {Nonlinear Analyses to Quantify Movement Variability in Human-Humanoid Interaction},
+  	type = {{PhD} dissertation as submitted},
 }
 ```
 
