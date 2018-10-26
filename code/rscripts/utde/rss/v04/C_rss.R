@@ -69,7 +69,8 @@ setwd(file.path(data_path))
 # (1) Loading Functions and Libraries and Setting up digits
 library(data.table) # for manipulating data
 library(signal)# for butterworth filter and sgolay
-source( paste(github_path,'/hwum-dataset/r-scripts/functions/ollin_cencah.R',sep='') )
+source( paste(github_repo_path,'/code/rfunctions/ollin_cencah.R',sep='') )
+
 
 ################################################################################
 # (2) Reading data
@@ -91,12 +92,20 @@ data <- fread( file_ext, header=TRUE)
 ### (4.1) Windowing Data [xdata[,.SD[1:2],by=.(Participant,Activity,Sensor)]]
 
 
+###########################
+###### one window lenght
+#windowsl <- c(100)
+#windowsn <- c('w2')
+#dimensions <- c(4)
+#delays <- c(5)
+#
+
 ##########################
 ##### one window lenght
-windowsl <- c(100)
-windowsn <- c('w2')
-dimensions <- c(4)
-delays <- c(5)
+windowsl <- c(500)
+windowsn <- c('w10')
+dimensions <- c(6)
+delays <- c(8)
 
 
 

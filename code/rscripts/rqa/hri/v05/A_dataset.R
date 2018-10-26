@@ -46,7 +46,7 @@ github_path <- getwd()
 
 ##VERSION 
 version <- '05'
-feature_path <- '/rqa'
+feature_path <- '/rqa/hri'
 
 ## Outcomes Data Path
 outcomes_data_path <- paste(github_repo_path,'/data-outputs', feature_path, '/v', version, sep="")

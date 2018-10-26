@@ -257,9 +257,9 @@ height.calc <- height / dpi
 
 
 tagim <- paste( '-window-', windowl, sep='')
-tagfile <- 'mindelaysi_'
+tagfile <- 'boxplots_'
 
-filenameimage <- paste(tagfile, "HS01_HN", tagim, ".png",sep="")
+filenameimage <- paste(tagfile, "HS01_HNnb", tagim, ".png",sep="")
 ggsave(filename = filenameimage,
         dpi = dpi,
         width = width.calc,

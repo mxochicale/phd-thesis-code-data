@@ -1,25 +1,18 @@
 # PhD thesis code and data
-This repository contains code and data used to write 
-[my PhD thesis](http://).
-
-Descriptions and outline for the code are given at the top of the scripts.
-
-## Content of the repository
-
-
-
-
+This repository contains code and data for  
+[my PhD thesis](https://github.com/mxochicale/phd-thesis)
+submitted on 26th October 2018. 
 
 
 ## Citation
-
-
 If you use or adapt any of the files in this repository,
-use the following BibTeX to cite [my PhD thesis](http://).
+use the following BibTeX to cite 
+[my PhD thesis](https://github.com/mxochicale/phd-thesis).
 
 ```
 @phdthesis{XochicalePhDThesis2018,
 	author = {Xochicale Miguel},
+	day = {26},
     	month = {10},
     	Year = {2018},
     	school = {University of Birmingham},
@@ -29,24 +22,12 @@ use the following BibTeX to cite [my PhD thesis](http://).
 }
 ```
 
-
-```
-@misc{Charles2013,
-  author = {Charles, P.W.D.},
-  title = {Project Title},
-  year = {2013},
-  publisher = {GitHub},
-  journal = {GitHub repository},
-  howpublished = {\url{https://github.com/charlespwd/project-title}},
-  commit = {4f57d6a0e4c030202a07a60bc1bb1ed1544bf679}
-}
-```
+>> **NB** I will be polishing and updating this repository
+while I am wait for my viva (tentatively January 2019 or February 2019).
 
 
-
-# issues
-
+# Issues
 If you see any errors or have any questions
-please create an issue at https://github.com/mxochicale/phd-thesis-code-data/issues
+please create an [issue](https://github.com/mxochicale/phd-thesis-code-data/issues)
 
 

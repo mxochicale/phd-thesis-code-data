@@ -86,18 +86,18 @@ data <- data[,.(
 ################################################################################
 ### (4.1) Windowing Data [xdata[,.SD[1:2],by=.(Participant,Activity,Sensor)]]
 
+#
+############################
+####### one window lenght
+#windowsl <- c(100)
+#windowsn <- c('w2')
+#
 
 ###########################
 ###### one window lenght
-windowsl <- c(100)
-windowsn <- c('w2')
+windowsl <- c(500)
+windowsn <- c('w10')
 
-
-############################
-####### one window lenght
-#windowsl <- c(500)
-#windowsn <- c('w10')
-#
 
 ##########################
 ##### two windows lenght
@@ -243,8 +243,8 @@ skwkdata$Activity <- factor(skwkdata$Activity, levels= levels (skwkdata$Activity
 
 
 		### Save Picture
-		width = 700
-		height = 1000
+		width = 800
+		height = 1200
 		text.factor = 1
 		dpi <- text.factor * 100
 		width.calc <- width / dpi

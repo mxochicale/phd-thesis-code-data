@@ -22,11 +22,18 @@ Run `install-basic-packages.R` for package dependecies
 ##  nonlinearTseries
 
 
-install `./install_nonlinearTseries.R`
+1. install dependencies by running `packages-dependencies.sh`
+```
+./packages-dependencies.sh
+```
 
+2. install nonlinearTseries with R script `install_nonlinearTseries.R`
+```
+R
+source(paste(getwd(),"/install-nonlinearTseries.R", sep=""), echo=FALSE)
+```
 
-then clone this repo
-
+3. then clone personal nonlinearTseries repository
 ```
 cd
 cd github
