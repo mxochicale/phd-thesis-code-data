@@ -1,7 +1,8 @@
 # PhD thesis code and data
-This repository contains code and data for  
-[my PhD thesis](https://github.com/mxochicale/phd-thesis)
-submitted on 26th October 2018. 
+This repository contains code and data 
+for [my PhD thesis](https://github.com/mxochicale/phd-thesis) submitted 
+on 26th October 2018. 
+
 
 
 ## Citation
@@ -19,15 +20,25 @@ use the following BibTeX to cite
   	address = {Birmingham, United Kingdom},
     	Title = {Nonlinear Analyses to Quantify Movement Variability in Human-Humanoid Interaction},
   	type = {{PhD} dissertation as submitted},
+ 	note = {As submitted, awaiting viva and further revision},
+	doi = {10.5281/zenodo.1473140},
+        url = {https://doi.org/10.5281/zenodo.1473140}
 }
 ```
 
->> **NB** I will be polishing and updating this repository
-while I am wait for my viva (tentatively January 2019 or February 2019).
 
 
-# Issues
-If you see any errors or have any questions
-please create an [issue](https://github.com/mxochicale/phd-thesis-code-data/issues)
+# Notes
+> I will be polishing and updating this repository while I am awaiting viva 
+(tentatively for viva might be in January 2019 or February 2019).
+
+
+
+# Contact 
+If you have specific questions about the content of the code and data of this thesis, 
+you can contact [Miguel Xochicale](mailto:perez.xochicale?subject="[PhD thesis]").
+If your question might be relevant to other people, please instead 
+[open an issue](https://github.com/mxochicale/phd-thesis-code-data/issues)
+
 
 
