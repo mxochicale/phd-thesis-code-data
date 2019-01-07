@@ -18,9 +18,6 @@ install.packages("xml2", repos=mirror_repo, dependencies = TRUE)
 #### roxygen2 for load_all()
 install.packages("roxygen2", repos=mirror_repo, dependencies = TRUE)
 
-#### devtools
-install.packages("devtools", repos=mirror_repo, dependencies = TRUE)
-
 
 
 # dependencies for nonlinearTseries

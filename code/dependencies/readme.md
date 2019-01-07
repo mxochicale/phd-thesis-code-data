@@ -2,45 +2,42 @@
 
 # R
 
-## R version 3.4.4 (2018-03-15) -- "Someone to Lean On"
 
-## installing R
+## 1. installing and dependencies R
 
-Follow [this instructions](https://github.com/mxochicale/R/blob/master/upgradeR/installation-ubuntu1604.md) to install R in Ubuntu 16.04 
-
+run:
 
 ```
-packages-dependencies.sh
+sh A_install-R.sh
 ```
 
-
-## packages
-Run `install-basic-packages.R` for package dependecies
+* version: R version 3.4.4 (2018-03-15) -- "Someone to Lean On"
 
 
-
-##  nonlinearTseries
-
-
-1. install dependencies by running `packages-dependencies.sh`
-```
-./packages-dependencies.sh
-```
-
-2. install nonlinearTseries with R script `install_nonlinearTseries.R`
+## 2. install basic R packages
+Run `B_install-basic-packages.R` for package dependecies
 ```
 R
-source(paste(getwd(),"/install-nonlinearTseries.R", sep=""), echo=FALSE)
+source(paste(getwd(),"/B_install-basic-packages.R", sep=""), echo=FALSE)
 ```
 
-3. then clone personal nonlinearTseries repository
+
+
+## 3. nonlinearTseries package
+
+
+* install nonlinearTseries with R script `install_nonlinearTseries.R`
+```
+R
+source(paste(getwd(),"/C_install-nonlinearTseries.R", sep=""), echo=FALSE)
+```
+
+* then clone personal nonlinearTseries repository
 ```
 cd
 cd github
 git clone https://github.com/mxochicale/nonlinearTseries
 ```
-
-
 
 
 
