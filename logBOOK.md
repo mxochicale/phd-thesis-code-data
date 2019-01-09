@@ -6,6 +6,33 @@ logBOOK
 
 ## todo
 
+* [ ] add usage section
+
+```
+mkdir share
+cd share
+git clone https://github.com/mxochicale/phd-thesis-code-data
+```
+
+
+added: Tue  8 Jan 10:03:29 GMT 2019
+
+
+
+* [ ] create an absolute path to avoid any problems 
+	with path changes
+
+For instance 
+```
+homepath <- Sys.getenv("HOME")
+source( paste(homepath,'/github/phd-thesis-code-data/code/rfunctions/extra_rqa.R',sep='') )
+```
+then document it
+
+
+	added: Tue  8 Jan 09:39:49 GMT 2019
+
+
 * [ ] incorporate help information to each piece of code:
 ```
 # Written by Miguel P Xochicale [http://mxochicale.github.io]
@@ -34,7 +61,7 @@ added: Fri 27 Jul 12:25:39 BST 2018
 
 
 
-## done
+## sorted
 
 
 
