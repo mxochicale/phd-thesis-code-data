@@ -20,6 +20,13 @@
 # University of Birmingham, U.K. (2014-2018)
 #+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+
+
+#homepath <- Sys.getenv("HOME")
+#message(  homepath )
+
+
+
 #for plotE1valus() and plotE2values()
 library(ggplot2)
 library(RColorBrewer)
@@ -34,7 +41,7 @@ library(RColorBrewer)
 #to replace NaN values, use
 #X <- replace(X, is.nan(X), 0)
 cao97sub <- function(x,maxd,tau) {
-	dyn.load( '~/github/phd-thesis-code-data/code/rfunctions/embedding_parameters/withCao1997/cao97sub.so'  )
+	dyn.load( '~/phd-thesis/phd-thesis-code-data/code/rfunctions/embedding_parameters/withCao1997/cao97sub.so'  )
     lx = length(x)
     retdata <- .Fortran("cao97sub",
                         x = as.double(x),
