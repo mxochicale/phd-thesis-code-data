@@ -52,7 +52,12 @@ install.packages("tseriesChaos", repos=mirror_repo, dependencies = TRUE)
 
 
 
+### pals for colors functions in scatter3D plots
+install.packages("pals", repos=mirror_repo, dependencies = TRUE)
 
+
+## Latex 
+install.packages("latex2exp", repos=mirror_repo, dependencies = TRUE)
 
 
 
